@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+  form.form-inline
+    if q
+        input.input-xxlarge(name='q', placeholder='Enter your travel search query', value=q)
+    else
+        input.input-xxlarge(name='q', placeholder='Enter your travel search query')
+    button.btn(type='submit') Search
